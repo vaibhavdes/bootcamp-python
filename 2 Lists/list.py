@@ -1,12 +1,12 @@
-  # In Previous Lesson we learned different data types as follows
+  # In Previous Lesson we learned different basic data types as follows
   # int = integer
   # float = floating
   # str = string
   # bool = boolean
   
-  # In this we gonna learn about making Data Points (Which are inter-related to each other) this can be used in future for analysis.
+  # In this we gonna learn about new Python data type which can contain data points (Which are inter-related to each other) that can be used in future for analysis.
   
-  # List (Values are wrapped in Square Brackets [...] )
+  # List (Values are wrapped in Square Brackets [...] ) (A Compound Data Type)
   # 1. Collection of Values
   # 2. Contain values of type (As Per Mentioned Data Types Above and advanced types)
   # 3. Contain values of Different Types (Can Contain Lists in List i.e Sub-List)
@@ -21,4 +21,22 @@
               ]
   type(my_family)
   
-  
+  #Create a list, areas, that contains the area of the hallway (hall), kitchen (kit), living room (liv), bedroom (bed) and bathroom (bath), in this order. Use the predefined variables.
+  # area variables (in square meters)
+  hall = 11.25
+  kit = 18.0
+  liv = 20.0
+  bed = 10.75
+  bath = 9.50
+
+  # Create list areas
+  areas = [hall,kit,liv,bed,bath]
+   
+  #Print areas with the print() function.
+  print(areas)
+
+  # Build the list so that the list first contains the name of each room as a string and then its area
+  areas = ["hallway", hall, "kitchen", kit, "living room", liv, "bedroom", bed, "bathroom", bath]  
+
+  # Try Following List 
+  sample = [ 1 + 2, "a" * 5, 3]
