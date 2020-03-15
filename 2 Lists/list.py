@@ -40,3 +40,20 @@
 
   # Try Following List 
   sample = [ 1 + 2, "a" * 5, 3]
+
+  # Python List are 0 (Zero Indexing)
+  print(areas[0])
+  # -ve Index can be used to access element in reverse (from end-side)
+  print(areas[-1])
+
+  # List Slicing (Create New List from Exisiting List by specifying range with index)
+  # [start:end] => [inclusive:exclusive]
+  print(areas[3:5])
+  # [:end] = elements from start i.e with zero
+  print(areas[:5])
+  # [start:] = element till end
+  print(areas[5:])
+
+
+    
+  
