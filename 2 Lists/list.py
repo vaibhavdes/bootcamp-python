@@ -86,3 +86,58 @@
            ['bathroom', 9.5]]
   
   house[-1][1]
+
+  
+  # Manipulating List
+  areas = ["hallway", 11.25, "kitchen", 18.0, "living room", 20.0, "bedroom", 10.75, "bathroom", 9.50]
+  #Update the area of the bathroom area to be 10.50 square meters instead of 9.50.
+  areas[-1] = 10.50
+  #Make the areas list more trendy! Change "living room" to "chill zone".
+  areas[4] =  "chill zone"
+  
+  # Try (Here 'x' holds the actual reference to memeory where array is stored and changes the value)
+  x = ["a", "b", "c", "d"]
+  x[1] = "r"
+  x[2:] = ["s", "t"]
+  
+  # Extend List (To Copy the element and to avoid changes in earlier reference )
+  
+  #Use the + operator to paste the list ["poolhouse", 24.5] to the end of the areas list. Store the resulting list as areas_1.
+  areas_1 = areas + ["poolhouse", 24.5]
+
+  #Further extend areas_1 by adding data on your garage. Add the string "garage" and float 15.45. Name the resulting list areas_2.
+  areas_2 = areas_1 + ["garage", 15.45]
+  
+  # Delete Element (and print the array to see reduced size and indexes)
+  del(areas_2[1])
+  # Type multiple commands in same line
+  del(areas_2[1]); del(areas_2[1])
+  
+  # Try
+  areas = ["hallway", 11.25, "kitchen", 18.0,
+        "chill zone", 20.0, "bedroom", 10.75,
+         "bathroom", 10.50, "poolhouse", 24.5,
+         "garage", 15.45]
+  
+  del(areas[-4:-2])
+  
+  # Behind the Scene of List
+  
+  # 1. We created a new List as follow
+  areas = [11.25, 18.0, 20.0, 10.75, 9.50]
+  # 2. We copied the same to another variable
+  areas_copy = areas
+  # 3. We made change in the another variable
+  areas_copy[0] = 5.0
+  # 4. Now try Printing the First List to see magic (Remember the reference to memory just like C/C++)
+  print(areas)
+  
+  # To Avoid Copying Reference we can do it in another way
+  areas_copy = list(areas)
+  # OR 
+  areas_copy = areas[:]
+
+  
+  # Hope you Enjoyed :-)
+
+
