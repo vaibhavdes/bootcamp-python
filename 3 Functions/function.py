@@ -18,4 +18,7 @@
 
   # To Know About Any Function and What argument does it take 
   help(type)
+  help(max)
+  ?max
+  ?type
   # Also there are thousand of function in python, if you need for anything search on internet
