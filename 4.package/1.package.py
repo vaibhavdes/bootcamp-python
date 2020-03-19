@@ -65,3 +65,11 @@
   # To convert an angle in degrees to an angle in radians, use the radians() function, which you just imported.
   dist = r * radians(12)
   print(dist)
+  
+  
+  # Try
+  # Suppose you want to use the function inv(), which is in the linalg subpackage of the scipy package. You want to be able to use this function as follows:
+  from scipy.linalg import inv as my_inv
+  
+  my_inv([[1,2], [3,4]])
+
