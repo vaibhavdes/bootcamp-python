@@ -72,3 +72,24 @@
   
   # Print out the number of o's on the variable place by calling count() on place and passing the letter 'o' as an input to the method. We're talking about the variable place, not the word "place"!
   print(place.count('o'))
+  
+  # Try This
+  areas = [11.25, 18.0, 20.0, 10.75, 9.50]
+  # Use the index() method to get the index of the element in areas that is equal to 20.0. Print out this index.
+  print(areas.index(20.0))
+
+  # Call count() on areas to find out how many times 9.50 appears in the list. Again, simply print out this number.
+  # Remember we called same method on string also
+  print(areas.count(9.50))
+  
+  # Use append() twice to add the size of the poolhouse and the garage again: 24.5 and 15.45, respectively. Make sure to add them in this order.
+  areas.append(24.5)
+  areas.append(15.45)
+  print(areas)
+
+  # Use the reverse() method to reverse the order of the elements in areas.
+  areas.reverse()
+  print(areas)
+
+
+
