@@ -8,7 +8,11 @@ Learn Python [ Django &amp; Data Science ] [ V 2./3. ]
 
 Roadmap:
   # Installation
-  # Basic of Python
+  # Basic of Python 
+      1 Hello_World
+      2 Lists	
+      3 Functions	& Methods
+      4 Package & Module
   # OOPS in Python
   # Web Application in Django
   # Take Application to Cloud
