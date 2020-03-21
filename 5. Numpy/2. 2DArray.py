@@ -41,3 +41,22 @@ np_weight_lb = np_baseball[:,1]
 
 # Select the height (first column) of the 124th baseball player in np_baseball and print it out.
 print(np_baseball[123,0])
+
+
+# Try 
+np_mat = np.array([[1, 2],
+                   [3, 4],
+                   [5, 6]])
+np_mat * 2
+np_mat + np.array([10, 10])
+np_mat + np_mat
+
+# numpy array with 3 columns representing height (in inches), weight (in pounds) and age (in years).
+# You managed to get hold of the changes in height, weight and age of all baseball players. It is available as a 2D numpy array, updated. Add np_baseball and updated and print out the result.
+                        # print(np_baseball + updated)
+# You want to convert the units of height and weight to metric (meters and kilograms respectively). As a first step, create a numpy array with three values: 0.0254, 0.453592 and 1. Name this array conversion.
+                        # conversion = np.array([0.0254,0.453592,1])
+# Multiply np_baseball with conversion and print out the result.
+                        # print(np_baseball * conversion)
+            
+            
