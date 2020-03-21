@@ -26,3 +26,43 @@ np_height_in = np.array(height_in)
 # Multiply np_height_in with 0.0254 to convert all height measurements from inches to meters. Store the new values in a new array, np_height_m.
 np_height_m = np_height_in * 0.0254
 print(np_height_m)
+
+# height_in is in inches and weight_lb is in pounds.
+
+# Create a numpy array from the weight_lb list with the correct units. Multiply by 0.453592 to go from pounds to kilograms. Store the resulting numpy array as np_weight_kg.
+# Use np_height_m and np_weight_kg to calculate the BMI of each player. Use the following equation:
+# Formulae - BMI=weight(kg)height(m)2
+
+np_height_m = np.array(height_in) * 0.0254
+np_weight_kg = np.array(weight_lb) * 0.453592
+bmi = np_weight_kg/np_height_m**2
+print(bmi)
+
+# To Subset in Numpy Array or Python List we use subscript
+x = [4 , 9 , 6, 3, 1]
+x[1]
+y = np.array(x)
+y[1]
+
+# In Numpy we have more than that let's see
+
+# Create a boolean numpy array: the element of the array should be True if the corresponding baseball player's BMI is below 21. 
+# You can use the < operator for this. Name the array light.
+light = bmi < 21
+print(light)
+
+# Also see this
+#Print out a numpy array with the BMIs of all baseball players whose BMI is below 21.
+# Use light inside square brackets to do a selection on the bmi array.
+print(bmi[light])
+print(bmi[bmi < 21])
+
+# First of all, numpy arrays cannot contain elements with different types.
+# If you try to build such a list, some of the elements' types are changed to end up with a homogeneous list. 
+# This is known as type coercion.
+
+# Second, the typical arithmetic operators, such as +, -, * and / have a different meaning for regular Python lists and numpy arrays.
+
+# Try
+np.array([True, 1, 2]) + np.array([3, 4, False])
+
