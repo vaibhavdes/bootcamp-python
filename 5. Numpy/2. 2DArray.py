@@ -60,3 +60,23 @@ np_mat + np_mat
                         # print(np_baseball * conversion)
             
             
+# Try
+x = [1, 4, 8, 10, 12]
+np.mean(x)
+np.median(x)
+
+# Create numpy array np_height_in that is equal to first column of np_baseball.
+                        # np_height_in = np.array(np_baseball[:,0])
+
+# Try
+med = None
+print("Median: " + str(med))
+
+# Use np.std() on the first column of np_baseball to calculate stddev. Replace None with the correct code.
+stddev = np.std(np_baseball[:,0])
+
+# Do big players tend to be heavier? Use np.corrcoef() to store the correlation between the first and second column of np_baseball in corr. Replace None with the correct code.
+corr = np.corrcoef(np_baseball[:,0],np_baseball[:,1])
+
+# After Baseball Data, Lets Analyze Soccer Data
+
