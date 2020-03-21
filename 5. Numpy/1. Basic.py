@@ -38,11 +38,15 @@ np_weight_kg = np.array(weight_lb) * 0.453592
 bmi = np_weight_kg/np_height_m**2
 print(bmi)
 
-# To Subset in Numpy Array or Python List we use subscript
+# To Subset in Numpy Array or Python List we use subscript and in both subsetting works the same way
 x = [4 , 9 , 6, 3, 1]
-x[1]
+print(x[1])
 y = np.array(x)
-y[1]
+print(y[1])
+
+# Print out a sub-array of np_height_in that contains the elements at index 100 up to and including index 110.
+print(np_height_in[100:111])
+
 
 # In Numpy we have more than that let's see
 
